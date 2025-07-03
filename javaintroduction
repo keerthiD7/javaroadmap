@@ -1,0 +1,48 @@
+Java Core Concepts – Revision Notes
+Today I revised some important Java fundamentals. Writing them down here to keep track and also help anyone who’s learning like me.
+
+What is Java?
+Java is a high-level, object-oriented, platform-independent language. It follows the “write once, run anywhere” concept because of the JVM.
+
+Features of Java:
+Simple – easy to learn
+Object-Oriented – everything is based on objects
+Platform Independent – code runs anywhere with JVM
+Secure – has built-in security features
+Robust – handles memory and exceptions well
+Multithreaded – can do many tasks at once
+Portable – runs on different platforms without changes
+High Performance – due to JIT compiler
+Distributed – supports distributed systems using RMI and EJB
+Dynamic – loads classes at runtime
+
+JVM, JRE, JDK:
+JVM: Executes Java bytecode
+JRE: JVM + libraries (to run Java apps)
+JDK: JRE + tools like compiler (to write and run Java programs)
+
+Variables in Java: are used to store the data
+Local variable – inside a method/block
+Instance variable – inside class, outside method, belongs to object
+Static variable – with static keyword, belongs to class, shared by all objects
+
+Data Types: Datatypes in java specify the type of data a variable can hold
+Primitive – byte, short, int, long, float, double, char, boolean
+Non-primitive – String, Arrays, Classes, etc.
+
+Literals:
+Fixed values assigned directly to variables like 10, 3.14, 'A', true
+
+Operators: operators in java are special symbols used to perform operations on variables and values
+Arithmetic: +, -, *, /, %
+Assignment: =, +=, -=,*=, /=, %= 
+Unary: ++, --, !
+Relational: ==, !=, >, <, >=, <=
+Logical: &&, ||
+Bitwise: &, |, ^, ~, <<, >>
+Ternary: condition ? true : false
+
+Type Casting:
+There are two types
+Implicit(Widening) – small to big type (e.g., int to float)(automatically)
+Explicit(Narrowing) – big to small type, done manually (e.g., (int) 3.5)
