@@ -1,0 +1,52 @@
+what i learned today – java interfaces and abstract classes
+– interface is a blueprint that contains only method names (no body)
+ – it tells what a class should do, not how to do it
+
+example:
+ interface Animal {
+ → void sound();
+ }
+
+– class that uses the interface must write the logic
+ class Dog implements Animal {
+ → public void sound() {
+ →→ System.out.println("Bark");
+ → }
+ }
+
+– from java 8, interface supports default and static methods
+ – default method → has body, can be overridden by class
+ – static method → has body, belongs to interface
+
+example:
+ interface Demo {
+ → default void show() {
+ →→ System.out.println("Default method");
+ → }
+→ static void info() {
+ →→ System.out.println("Static method");
+ → }
+ }
+
+– interface was 100% abstract before java 8
+ – now it’s not fully abstract if it has default/static methods
+ – abstract class gives partial abstraction
+ – abstract class can have both abstract and normal methods
+
+when to use interface and abstract class
+✅ use interface when:
+ – you want to define only method names (rules)
+ – no shared code needed
+ – need multiple inheritance
+ – want to achieve full abstraction (only if no default/static methods)
+
+✅ use abstract class when:
+ – you want to give some common code to all subclasses
+ – want to enforce some rules and share logic
+ – need constructors or non-static variables
+ – multiple inheritance not needed
+
+simple logic:
+ → if you just want to say what to do → go with interface
+ → if you want to say what to do + how to do it (some part) → go with abstract class.
+
